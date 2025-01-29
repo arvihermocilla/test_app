@@ -18,6 +18,5 @@ class CreateReservations < ActiveRecord::Migration[8.0]
     end
 
     add_index :reservations, :guest_id
-    # add_reference :reservations, :guest, null: false, foreign_key: true
   end
 end
