@@ -20,8 +20,8 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   host: <%= ENV.fetch("PG_HOST") { '127.0.0.1' } %>
   port: <%= ENV.fetch("PG_PORT") { 5432 } %>
-  username: <%= ENV.fetch("PG_USERNAME") { root } %>
-  password: <%= ENV.fetch("PG_PASSWORD") { root } %>
+  username: <%= ENV.fetch("PG_USERNAME") { 'root' } %>
+  password: <%= ENV.fetch("PG_PASSWORD") { 'root' } %>
 
 
 development:
